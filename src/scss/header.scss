@@ -1,0 +1,16 @@
+.header_container{ background: #2d2038;
+    header{height: 50px; padding: 0 40px; display: block; overflow: hidden;
+        .inner_container{display: block; overflow: hidden;
+            .menu_left{float: left;}
+            .menu_right{float: right;}
+        }
+        ul{display: block; overflow: hidden; margin: 0; padding: 0;}
+        ul li{float: left; list-style: none;}
+        input,a{ float: left;}
+        a{position: relative; text-transform: uppercase; padding: 0px 25px; line-height: 50px; color: #fff; text-decoration: none; opacity: 0.65; font-size: 14px;}
+        .active{opacity: 1;}
+        .active::after{display: block; content: ""; height: 3px; width: 100%; background: #eb3495; left: 0; bottom: 0px; position: absolute;}
+        
+    }
+    
+}
