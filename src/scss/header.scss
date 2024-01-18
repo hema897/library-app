@@ -1,10 +1,22 @@
 .header_container{ background: #2d2038;
-    header{height: 50px; padding: 0 40px; display: block; overflow: hidden;
-        .inner_container{display: block; overflow: hidden;
+    header{height: 50px; padding: 0 40px; display: block; 
+        .inner_container{display: block; 
             .menu_left{float: left;}
-            .menu_right{float: right;}
+            .menu_right{float: right;
+                .profile_info{ position: relative; padding-right: 15px;
+                    .profile_icon{background: #EB3495; padding: 3px 8px 4px; border-radius: 50%; line-height: 50px; text-transform: capitalize; color: #ffff; border: 1px solid #fff;}
+                    .profile_name{color: #fff; padding-left: 5px; width: 100px; display: inline-block; text-overflow: ellipsis; white-space: nowrap; overflow: hidden; position: relative; bottom: -2px;}
+                    &::after{content: ""; border: solid #fff; border-width: 0 2px 2px 0; display: inline-block; padding: 3px; transform: rotate(-45deg); -webkit-transform: rotate(45deg); position: absolute; top: 20px; right: 4px;}
+                    .profile_menu{position: absolute; background: #281833; color: hsla(0,0%,100%,.4); box-shadow: 0 8px 6px 0 rgba(0,0,0,.46); top: 45px; opacity: 0; padding: 5px 0;
+                        li{padding: 10px 20px; font-size: 14px; cursor: pointer;}
+                    }
+                    &:hover{
+                        .profile_menu{opacity: 1;}
+                    }
+                }
+            }
         }
-        ul{display: block; overflow: hidden; margin: 0; padding: 0;}
+        ul{display: block; margin: 0; padding: 0;}
         ul li{float: left; list-style: none;}
         input,a{ float: left;}
         a{position: relative; text-transform: uppercase; padding: 0px 25px; line-height: 50px; color: #fff; text-decoration: none; opacity: 0.65; font-size: 14px;}

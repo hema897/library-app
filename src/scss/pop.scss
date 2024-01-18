@@ -1,0 +1,12 @@
+.modal{ position: fixed; top: 0%; left: 0%; height: 100%; width: 100%; background: rgba(1,1,1,0.7); border: none;
+    .pop_cont{ width: 500px; margin: 120px auto; background: #281c31; color: #9ea2ac;
+        .modal_cont{ padding: 20px 40px; text-align: center;}
+        h2{font-size: 22px; margin: 16px 0 4px; font-weight: 400; color: #fff;}
+        h3{margin: 10px 0 50px; color: #fff; opacity: .65; font-weight: 400; font-size: 16px;}
+        .btns{
+            button{width: 100px; height: 34px; border: none; border-radius: 3px; color: #fff; margin-bottom: 20px; cursor: pointer;}
+            .pay{margin-right: 10px; font-size: 14px; background: #eb3495;}
+            .close{ margin-left: 10px; background: #3f3640;}
+        }
+    }
+}
